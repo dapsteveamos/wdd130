@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* 3. CSS i neeed to set the default here to font family to eqaul paragraph font 
+and i will use var() for that purpose and then
+i will limit (max-width) of the document output to the screen to 960 pixels, and
+set the padding around the document to 20 pixels. */
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+/* 4. i am to define the css vairable see the instructon i paste beside for remembrance
+ ent :root pseudo-class selector. In this rule define CSS variables for the following components.
+ all what i will stipulate below*/
+
+:root{
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent1-color);
+}
+
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+/* 5. You will use your selected color schema and font family choices in your site plan. Group all the built-in headings 
+(h1 - h6) using a grouping selector. Set the group's font-family to the CSS variable established
+ in the document root for heading-font and give the headings the color of your choice. */
+ h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+}
+
+p {
+    padding: 25px;
+}
+
+/* Example (nav selector and anchor tag children) */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
