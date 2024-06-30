@@ -17,10 +17,19 @@ aside{
     color: #333;
     text-align: center; 
 }
+
+aside h2{
+    position: absolute;
+    top: 990px;
+    left: 150px;
+}
+
 main img {
     width: 150px;
     height: auto;
+    float: right; 
 }
+     /*added this in week 3*/
 
 p {padding: 0;}
 
@@ -57,4 +66,15 @@ img{
 p {
     padding: 10px;
 }
+
+/* Class Selector */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+
 

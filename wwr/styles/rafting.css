@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #396e94;
+    --secondary-color: #e7c24f;
+    --accent1-color: #a43312;
+    --accent2-color: #381d2a;
+    --text-color: #ffffff; /* Added white color for text */
+
+    --heading-font: 'Montserrat', sans-serif;
+    --paragraph-font: 'Open Sans', sans-serif;
+
+    --nav-background-color: var(--primary-color);
+    --nav-link-color: #ffffff;
+    --nav-hover-link-color: var(--secondary-color);
+    --nav-hover-background-color: var(--accent1-color);
+}
+
+body {
+    font-family: var(--paragraph-font);
+    color: var(--text-color); /* Changed to use text color variable */
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header, footer {
+    background-color: var(--secondary-color);
+    padding: 1em;
+}
+
+nav a {
+    color: var(--nav-link-color);
+    text-decoration: none;
+    margin: 0 1em;
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1, .hero p {
+    color: var(--text-color); /* Ensure hero text is white */
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    border-radius: 5px;
+    color: var(--text-color); /* Ensure article text is white */
+}
+
+.hero article img {
+    float: right;
+    margin-left: 1em;
+    border-radius: 50%;
+}
+
+.sociallinks a {
+    margin: 0 0.5em;
+}
+
+.sociallinks img {
+    width: 24px;
+    height: 24px;
+}
