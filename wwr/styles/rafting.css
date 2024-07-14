@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
 :root {
     --primary-color: #396e94;
@@ -14,7 +14,7 @@
     --nav-hover-link-color: var(--secondary-color);
     --nav-hover-background-color: var(--accent1-color);
 
-    max-width: 1200px;
+    --max-width: 1200px;
 }
 
 body {
@@ -25,20 +25,35 @@ body {
     margin: 0 auto;
 }
 
-header nav {
+header {
     background-color: var(--nav-background-color);
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 1rem 0;
 }
 
-header nav a {
+.header-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.logo {
+    max-height: 80px;
+    margin-right: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
     color: var(--nav-link-color);
     padding: 0.5rem 1rem;
+    text-decoration: none;
 }
 
-header nav a:hover {
+nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
@@ -47,14 +62,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
+h1, h2 {
+    text-align: center;
+}
+
 
 p {
     color: var(--accent2-color);
     padding: 5px;
-}
-
-a {
-    text-decoration: none;
 }
 
 .hero {
@@ -70,55 +85,47 @@ a {
     height: auto;
 }
 
-.hero .hero-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 1rem;
-    border-radius: 10px;
-    text-align: center;
-    width: 80%; /* Adjust width as needed */
-}
-
-.hero h1 {
-    margin: 0;
-}
-
-.hero article {
+article.u {
     display: flex;
     align-items: center;
+    justify-content: flex-end; /* Align items to the end (right side) */
     margin-top: 1rem;
 }
 
-.hero article img {
-    float: right;
-    margin-left: 1rem;
+article.u img {
+    margin-left: 1rem; /* Optional: Add some space between text and image */
     max-width: 150px; /* Adjust size as needed */
 }
 
-.hero article p {
+article.u p {
     margin: 0;
 }
 
-section {
+section.history {
     padding: 2rem 0;
 }
 
-section.imgfloat {
+section.adventures {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    flex-wrap: nowrap;
+    gap: 0,3rem;
     justify-content: space-between;
-    padding: 2rem 0;
+    padding: 1rem 0;
+    overflow-x: auto;
 }
 
-section.imgfloat img {
-    flex: 1 1 calc(33% - 1rem);
+section.adventures figure {
+    flex: 1 0 calc(20% - 1rem);
     max-width: 100%;
     height: auto;
     border-radius: 10px;
+    text-align: center;
+}
+
+section.adventures img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 footer {
@@ -126,13 +133,32 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer .sociallinks a {
-    margin: 0 0.5rem;
+footer p {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
+
+
+
+
 
 footer .sociallinks img {
     width: 45px;
     height: auto;
+    border-radius: 10px;
+}
+
+
+.sociallinks img {
+    display: flex;
+    justify-content: end;
+    align-items: end;
 }
