@@ -147,17 +147,11 @@ footer p {
 
 }
 
-
-
-
-
 footer .sociallinks img {
     width: 45px;
     height: auto;
     border-radius: 10px;
 }
-
-
 .sociallinks img {
     display: flex;
     justify-content: end;
