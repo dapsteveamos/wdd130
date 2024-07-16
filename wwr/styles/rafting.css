@@ -25,6 +25,7 @@ body {
     margin: 0 auto;
 }
 
+/* header */
 header {
     background-color: var(--nav-background-color);
     padding: 1rem 0;
