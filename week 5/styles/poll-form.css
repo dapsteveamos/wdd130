@@ -7,6 +7,13 @@
     box-sizing: border-box;
 }
 
+main{
+background-color: rgb(186, 194, 194);
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 15px; 
+
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2em;
@@ -16,10 +23,10 @@ body {
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 15px; /* Adds the curve effect */
+    border-radius: 15px; 
     background-color: #ffffff; 
     display: grid;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* SO THAT I CAN Adds a subtle shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -34,13 +41,14 @@ h1 {
 }
 
 
+
 form {
     width: 650px;
     margin: 0 auto;
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    background-color: #ffffff;
+    background-color: #ac5151;
     display: grid;
   }
 
@@ -97,6 +105,8 @@ button {
   
   button:hover {
     background-color: darkgreen;
+    
+    
   }
 
   
@@ -110,20 +120,35 @@ footer {
 }
 
 
-.form-item {
+/* .form-item {
     display: grid;
     align-items: center;
-  }
+    
+  } */
 
-  
+  .form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 .column1 {
     grid-template-columns: 3fr 1fr;
     margin: 0.5rem 0;
   }
 
-  
+
+
 .column2 {
     grid-template-columns: 1fr 2fr;
   }
 
 
+  .column1,
+  .column2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+  }
