@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Get in touch with White Water Rafting for inquiries, reservations, and more. Find our contact details, location, and meet our team. We're here to help you ride the rapids and embrace the adventure.">
+    <meta name="author" content="STEVE DAPRIM AMOS">
+    <link rel="stylesheet" href="styles/contactus.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <img src="images/logo.png" alt="logo" class="logo">
+        <nav>
+            <a href="#">Home Page</a>
+            <a href="about.html">About</a>
+            <a href="">Trips</a>
+            <a class="current" href="contact.html">Contact</a>
+        </nav>
+    </div>
+</header>
+<main>
+    <h1>Contact Us</h1>
+
+    <h2>Company Information</h2>
+    <p>White Water Rafting</p>
+    <p>Address: 123 Adventure Lane, Rapids City, US</p>
+    <p>Phone: +234 9166577130</p>
+    <p>Email: <a href="mailto:">dapsteveamos@gmail.com</a></p>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2811.1783248491643!2d7.011537378853736!3d4.837430294903264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1721294027316!5m2!1sen!2sng" width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <h2>Meet Our Team</h2>
+    <section class="employee-profiles">
+        <figure>
+            <img src="images/employee1.jpg" alt="Employee 1">
+            <figcaption>Steve Daprim Amos - Project Manager</figcaption>
+        </figure>
+        <figure>
+            <img src="images/employee2.jpg" alt="Employee 2">
+            <figcaption>Richmond Akpama - Financial Officer</figcaption>
+        </figure>
+        <figure>
+            <img src="images/employee3.jpg" alt="Employee 3">
+            <figcaption>Jacob Ekanem - Operations Manager</figcaption>
+        </figure>
+    </section>
+
+    <h2>Send Us a Message</h2>
+    <form action="/submit_form" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+            <legend>Purpose of Message:</legend>
+            <input type="radio" id="general" name="purpose" value="general">
+            <label for="general">General Inquiry</label><br>
+            <input type="radio" id="reservation" name="purpose" value="reservation">
+            <label for="reservation">Reservation Question</label><br>
+            <input type="radio" id="suggestion" name="purpose" value="suggestion">
+            <label for="suggestion">Website Suggestion</label>
+        </fieldset>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="checkbox" id="newsletter" name="newsletter">
+        <label for="newsletter">Please subscribe me to the monthly newsletter</label><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</main>
+<footer>
+    <p>@2024 | White Water Rafting | Steve Daprim Amos</p>
+    <nav class="sociallinks">
+        <a href="https://www.linkedin.com/in/steve-amos-ab910b282"><img src="images/linked_logo.png" alt="LinkedIn logo" width="45"></a>
+        <a href="https://web.facebook.com/steve.amos.182/"><img src="images/facebook_logo.png" alt="Facebook logo" width="45"></a>
+        <a href="https://www.instagram.com/itz_.s.t.e.v.e._/"><img src="images/instagram_logo.png" alt="Instagram logo" width="45"></a>
+    </nav>
+</footer>
+</body>
+</html>
