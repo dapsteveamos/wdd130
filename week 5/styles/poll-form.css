@@ -7,12 +7,8 @@
     box-sizing: border-box;
 }
 
-main{
-background-color: rgb(186, 194, 194);
-border: 1px solid rgba(0, 0, 0, 0.1);
-border-radius: 15px; 
 
-}
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +20,7 @@ body {
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 15px; 
-    background-color: #ffffff; 
+    /* background-color: #ffffff;  */
     display: grid;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -48,7 +44,7 @@ form {
     padding: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
-    background-color: #ac5151;
+    background-color: #dfd5d5;
     display: grid;
   }
 
@@ -64,7 +60,7 @@ fieldset {
   
 legend {
     padding: 0.5rem;
-    color: navy;
+    color: #000080;
     font-size: 1.3em;
   }
 
@@ -105,8 +101,6 @@ button {
   
   button:hover {
     background-color: darkgreen;
-    
-    
   }
 
   
@@ -136,7 +130,7 @@ footer {
 .column1 {
     grid-template-columns: 3fr 1fr;
     margin: 0.5rem 0;
-  }
+}
 
 
 
@@ -145,8 +139,8 @@ footer {
   }
 
 
-  .column1,
-  .column2 {
+.column1,
+.column2 {
       display: flex;
       justify-content: center;
       align-items: center;

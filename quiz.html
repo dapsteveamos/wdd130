@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <link rel="stylesheet" href="styles/quiz.css">
+</head>
+<body>
+    <header>
+        <h1>HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form id="quiz-form">
+            <div class="question">
+                <label for="q1"><span class="que_no_blue">1.</span> What does the acronym CSS stand for?                </label>
+                <input type="text" id="q1" name="q1" required>
+            </div>
+            <div class="question">
+                <label for="q2"><span class="que_no_blue">2.</span> How are id and class attributes selected in CSS?</label>
+                <textarea id="q2" name="q2" rows="3" required></textarea>
+            </div>
+            <div class="question">
+                <label for="q3"><span class="que_no_blue">3.</span> </span>Which of the following is a valid CSS Comment? </label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Choose One ...</option>
+                    <option value="option1">Single-line Comments(/* This is a single-line comment */)</option>
+                    <option value="option2">Multi-line ments(/* */)</option>
+                    <option value="option3">Single linkage comento(''])</option>
+                </select>
+            </div>
+            <div class="question">
+                <label for="q4"><span class="que_no_blue">4. </span>what is the bottom margin given to this declaration</label>
+                <p class="questionmargin"> margin: 10px 5px 5px 15px;</p>
+                <input type="number" id="q4" name="q4" required>
+            </div>
+            <div class="butalign"></div>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>@2024 | Basic HTML and CSS Quiz | Steve Daprim Amos</p>
+    </footer>
+</body>
+</html>
+
