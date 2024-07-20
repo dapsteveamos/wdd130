@@ -242,3 +242,72 @@ form button {
 form button:hover {
     background-color: var(--accent1-color);
 }
+
+/* i want to add my trip code here 
+so i can easily know where i started the trip targeting 
+from, i will rearrange code to order later 
+*/
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.cta-button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.cta-button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Trip Descriptions */
+.trip-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.trip {
+    max-width: 30%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.trip img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
