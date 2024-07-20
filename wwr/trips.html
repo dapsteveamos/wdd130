@@ -76,6 +76,102 @@
             </tr>
         </tbody>
     </table>
+
+    <!-- Customer Testimonials -->
+    <section class="testimonials">
+        <h2>Customer Testimonials</h2>
+        <article class="testimonial">
+            <p>"The Adventure Rapids trip was the most thrilling experience of my life! Highly recommend it!" - John D.</p>
+        </article>
+        <article class="testimonial">
+            <p>"Our family had a wonderful time on the Family Fun Float. It was the perfect way to spend a sunny afternoon." - Sarah W.</p>
+        </article>
+        <article class="testimonial">
+            <p>"The Scenic River Tour offered breathtaking views and an unforgettable experience. Can't wait to go again!" - Emily R.</p>
+        </article>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <details>
+            <summary>What should I wear for the rafting trips?</summary>
+            <p>Wear comfortable clothing that can get wet. We recommend quick-drying materials and water shoes.</p>
+        </details>
+        <details>
+            <summary>Is there an age limit for the trips?</summary>
+            <p>Yes, Adventure Rapids is suitable for ages 12 and up, while Family Fun Float is open to all ages.</p>
+        </details>
+        <details>
+            <summary>Do I need to know how to swim?</summary>
+            <p>While it's not required to know how to swim, it is highly recommended for your safety. All participants will be provided with life jackets.</p>
+        </details>
+    </section>
+
+    <!-- Detailed Itinerary for Each Trip -->
+    <section class="itineraries">
+        <h2>Trip Itineraries</h2>
+        <article class="itinerary">
+            <h3>Adventure Rapids</h3>
+            <ul>
+                <li>Meet at the base camp and safety briefing</li>
+                <li>Rafting through Class III and IV rapids</li>
+                <li>Break for lunch</li>
+                <li>Continue rafting and scenic spots</li>
+                <li>Return to base camp</li>
+            </ul>
+        </article>
+        <article class="itinerary">
+            <h3>Family Fun Float</h3>
+            <ul>
+                <li>Meet at the base camp and safety briefing</li>
+                <li>Leisurely float down the river</li>
+                <li>Spot wildlife and scenic views</li>
+                <li>Break for snacks</li>
+                <li>Continue floating and games</li>
+                <li>Return to base camp</li>
+            </ul>
+        </article>
+        <article class="itinerary">
+            <h3>Scenic River Tour</h3>
+            <ul>
+                <li>Meet at the base camp and safety briefing</li>
+                <li>Start the scenic tour with guide commentary</li>
+                <li>Photography opportunities</li>
+                <li>Break for lunch</li>
+                <li>Continue tour with historical points of interest</li>
+                <li>Return to base camp</li>
+            </ul>
+        </article>
+    </section>
+
+    <!-- Safety Information -->
+    <section class="safety-info">
+        <h2>Safety Information</h2>
+        <p>Your safety is our top priority. Our guides are highly trained professionals, and we provide all necessary safety equipment, including life jackets and helmets. Please listen to your guide's instructions and follow all safety guidelines.</p>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="booking-form">
+        <h2>Book Your Trip</h2>
+        <form action="submit_booking.html" method="post">
+            <label for="trip">Select Trip:</label>
+            <select id="trip" name="trip">
+                <option value="adventure-rapids">Adventure Rapids</option>
+                <option value="family-fun-float">Family Fun Float</option>
+                <option value="scenic-river-tour">Scenic River Tour</option>
+            </select>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
 </main>
 <footer>
     <p>@2024 | White Water Rafting | Steve Daprim Amos</p>
