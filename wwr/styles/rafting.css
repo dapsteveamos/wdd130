@@ -86,6 +86,25 @@ p {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover;
+}
+
+
+.hero-text h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(20, 33, 68, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 article.u {
@@ -311,3 +330,87 @@ table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
+/* i will start index targeting here  */
+/* Hero Section */
+
+/* Newsletter Signup */
+.newsletter-signup {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.newsletter-signup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newsletter-signup form label {
+    margin-top: 1rem;
+}
+
+.newsletter-signup form input,
+.newsletter-signup form button {
+    margin-top: 0.5rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.newsletter-signup form button {
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+}
+
+.newsletter-signup form button:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Call to Action */
+.call-to-action {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
+.call-to-action h2 {
+    margin-bottom: 1rem;
+}
+
+.call-to-action a {
+    color: white;
+    background-color: var(--primary-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.call-to-action a:hover {
+    background-color: var(--accent1-color);
+}
+
+/* Site Purpose Grid */
+.site-purpose {
+    padding: 2rem 1rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
