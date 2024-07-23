@@ -25,7 +25,19 @@ body {
     margin: 0 auto;
 }
 
-/* header */
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+p {
+    color: var(--accent2-color);
+    padding: 5px;
+}
+
+/* Header */
 header {
     background-color: var(--nav-background-color);
     padding: 1rem 0;
@@ -59,22 +71,7 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-    text-align: center;
-}
-
-
-p {
-    color: var(--accent2-color);
-    padding: 5px;
-}
-
+/* Hero Section */
 .hero {
     position: relative;
     width: 100%;
@@ -89,12 +86,6 @@ p {
     object-fit: cover;
 }
 
-
-.hero-text h1 {
-    font-family: var(--heading-font);
-    font-size: 2.5rem;
-}
-
 .hero-text {
     position: absolute;
     top: 50%;
@@ -107,29 +98,32 @@ p {
     border-radius: 10px;
 }
 
+.hero-text h1 {
+    font-family: var(--heading-font);
+    font-size: 2.5rem;
+}
+
+/* Main Content */
 article.u {
     display: flex;
     align-items: center;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 article.u img {
-    margin-left: 1rem; /* Optional: Add some space between text and image */
-    max-width: 150px; /* Adjust size as needed */
+    margin-left: 1rem;
+    max-width: 150px;
 }
 
-article.u p {
-    margin: 0;
-}
-
-section.history {
+section.history, section.milestones, section.vision-values {
     padding: 2rem 0;
 }
 
+/* Adventures Section */
 section.adventures {
     display: flex;
     flex-wrap: nowrap;
-    gap: 0,3rem;
+    gap: 0.3rem;
     justify-content: space-between;
     padding: 1rem 0;
     overflow-x: auto;
@@ -149,6 +143,7 @@ section.adventures img {
     border-radius: 5px;
 }
 
+/* Footer */
 footer {
     margin-top: 10px;
     background-color: var(--primary-color);
@@ -165,7 +160,6 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 footer .sociallinks img {
@@ -173,20 +167,12 @@ footer .sociallinks img {
     height: auto;
     border-radius: 10px;
 }
-.sociallinks img {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
 
 footer .sociallinks a {
     margin-left: 1rem;
 }
-/* 
-This is where i am starting addition of css for contact
 
-*/
-/* Map */
+/* Contact Page */
 .map iframe {
     width: 100%;
     height: 450px;
@@ -204,7 +190,6 @@ form {
     max-width: 600px;
     margin: 0 auto;
     background-color: #f9f9f9;
-
 }
 
 form label {
@@ -235,16 +220,13 @@ form fieldset legend {
     margin-bottom: 0.5rem;
 }
 
-form input[type="radio"] {
+form input[type="radio"],
+form input[type="checkbox"] {
     margin-right: 0.5rem;
 }
 
 form textarea {
     height: 100px;
-}
-
-form input[type="checkbox"] {
-    margin-right: 0.5rem;
 }
 
 form button {
@@ -261,10 +243,6 @@ form button:hover {
     background-color: var(--accent1-color);
 }
 
-/* i want to add my trip code here 
-so i can easily know where i started the trip targeting 
-from, i will rearrange code to order later 
-*/
 /* Call to Action */
 .call-to-action {
     text-align: center;
@@ -329,9 +307,6 @@ table tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* i will start index targeting here  */
-/* Hero Section */
-
 /* Newsletter Signup */
 .newsletter-signup {
     text-align: center;
@@ -366,30 +341,6 @@ table tr:nth-child(even) {
 }
 
 .newsletter-signup form button:hover {
-    background-color: var(--accent1-color);
-}
-
-/* Call to Action */
-.call-to-action {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
-}
-
-.call-to-action h2 {
-    margin-bottom: 1rem;
-}
-
-.call-to-action a {
-    color: white;
-    background-color: var(--primary-color);
-    padding: 0.75rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.call-to-action a:hover {
     background-color: var(--accent1-color);
 }
 
